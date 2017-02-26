@@ -1,0 +1,23 @@
+{$APPTYPE CONSOLE}
+uses
+  SysUtils;
+var y,y1,y2,y3,y4,y5,y6,p,q,r:Real;
+begin
+  { TODO -oUser -cConsole Main : Insert code here }
+      Writeln('Please, input p:');        
+       Readln(p);
+       y:=1/p;
+       y1:= y/600;
+       y2:= Exp(y1);                       
+       y3:= ln(y2) ;
+       y4:= y3/14;
+       y5:= 14*y4  ;
+       y6:= 600*y5 ;
+     WriteLn('y=',y:16:14);
+     WriteLn('y6 =', y6:16:14);
+     q:=abs(y-y6);
+     r:=q/abs(y);
+     Writeln('Absolut. pogresh. = y-y6=' , q:14:16);
+     Writeln('otnos. pogresh. =' , r:14:16);
+      Readln;
+end.
